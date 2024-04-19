@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/urubu">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,11 +16,13 @@
         <TextView
             android:id="@+id/titulo"
             android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"
-            android:text="GERA NÚMEROS MEGA SENA"
+            android:layout_height="119dp"
+            android:layout_weight="500"
             android:gravity="center"
-            android:textSize="18sp" />
+            android:text="GERA NÚMEROS MEGA SENA"
+            android:textColor="#2F00FB"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -71,48 +74,45 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:layout_height="128dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_weight="0.4"
-            android:text="4"
-            android:textSize="30sp"
-            android:gravity="center"
-            android:textColor="@color/white"
-            android:background="@drawable/circle"
             android:layout_margin="5dp"
-            />
+            android:layout_weight="0.4"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_weight="0.4"
-            android:text="5"
-            android:textSize="30sp"
-            android:gravity="center"
-            android:textColor="@color/white"
-            android:background="@drawable/circle"
             android:layout_margin="5dp"
-            />
+            android:layout_weight="0.4"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="0dp"
             android:layout_height="100dp"
-            android:layout_weight="0.4"
-            android:text="6"
-            android:textSize="30sp"
-            android:gravity="center"
-            android:textColor="@color/white"
-            android:background="@drawable/circle"
             android:layout_margin="5dp"
-            />
+            android:layout_weight="0.4"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
     </LinearLayout>
 
@@ -120,7 +120,16 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Gerar Números"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#06B1B8"
+        android:text="Gerar Números" />
+
+    <Button
+        android:id="@+id/alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#06B1B8"
+        android:text="Vizualizar" />
 
 </LinearLayout>
